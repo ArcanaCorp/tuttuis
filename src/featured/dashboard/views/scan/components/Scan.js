@@ -1,24 +1,60 @@
 import { useState } from "react";
 import BarcodeScanner from "react-qr-barcode-scanner";
+import { serviceRegisterAssitence } from "@/featured/dashboard/services/assistence.services";
+import moment from "moment";
+import { toast } from "sonner";
 
 export default function Scan() {
 
-    const [data, setData] = useState("No hay datos");
-    //const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("Error al registrar la asistencia del alumno.");
+    const [loading, setLoading] = useState(false);
+
+    const handleRegisterAssitence = async (token) => {
+        try {
+            setLoading(true);
+            const dia = moment().format('YYYY-MM-DD')
+            const hora = '07:00:00' //moment().format('HH:mm:ss')
+            const data = await serviceRegisterAssitence(token, dia, hora);
+            if (!data.ok) return toast.warning('Alerta', { description: data.message })
+                toast.success('Éxito', { description: data.message })
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleRetry = () => {
+        setError('')
+        setLoading(false)
+    }
 
     return (
-        <div className="__scan_wrap_native">
-            <BarcodeScanner 
-                width={500}
-                height={500}
-                onUpdate={(err, result) => {
-                if (result) setData(result.text);
-                else setData("Not Found");
-                }}
-            />
-
-            {/* Si quieres mostrar el valor leído, puedes dejar algo así */}
-            {<p>{data}</p>}
-        </div>
+        
+        loading ? (  
+            <div className="__scan_box_loading">
+                <span className="__loading"></span>
+            </div>
+        ) : (
+            error ? (
+                <div className="__scan_box_error">
+                    <div>
+                        <p>{error}</p>
+                        <button onClick={handleRetry}>Reintentar</button>
+                    </div>
+                </div>
+            ) : (
+                <BarcodeScanner
+                    width={500}
+                    height={500}
+                    onUpdate={(err, result) => {
+                        if (err) return;
+                        if (!result) return;
+                        const text = result.text;
+                        handleRegisterAssitence(text)
+                    }}
+                />
+            )
+        )
     );
 }

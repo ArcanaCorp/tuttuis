@@ -1,6 +1,6 @@
 import { IconHome, IconReport, IconScan, IconSearch, IconUserCircle } from "@tabler/icons-react"
 
-export const REACT_API_URL = 'https://vrw0c3x5-4000.brs.devtunnels.ms/api/v1'
+export const REACT_API_URL = 'https://college.ttutis.com/api/v1'
 
 export const tabs = [
     {

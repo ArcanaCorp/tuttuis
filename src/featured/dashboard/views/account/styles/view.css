@@ -1,0 +1,51 @@
+.__main_account_view {
+    width: 100%;
+    padding: 1rem;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+}
+
+.__main_account_view::-webkit-scrollbar {
+    display: none;
+}
+
+.__main_account_view .__section_opt {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+}
+
+.__main_account_view .__section_opt h4 {
+    margin-bottom: .8rem;
+}
+
+.__main_account_view .__section_opt ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.__main_account_view .__section_opt ul li {
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    border-radius: var(--radius-md);
+}
+
+.__main_account_view .__section_opt ul li button {
+    width: 100%;
+    display: flex;
+    height: inherit;
+    gap: 1rem;
+    align-items: center;
+    border-radius: inherit;
+    font-size: var(--font-size-xs);
+    background-color: var(--color-background);
+}
+
+.__main_account_view .__section_opt ul li .__btn_logout {
+    color: var(--color-error);
+    background: none;
+}

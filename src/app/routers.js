@@ -9,6 +9,8 @@ import DashboardLayout from "@/featured/dashboard/layout";
 import HomeView from "@/featured/dashboard/views/home/view";
 import ReportView from "@/featured/dashboard/views/report/view";
 import ScanView from "@/featured/dashboard/views/scan/view";
+import SearchView from "../featured/dashboard/views/search/view";
+import AccountView from "../featured/dashboard/views/account/view";
 
 export const router = createBrowserRouter([
     {
@@ -46,17 +48,15 @@ export const router = createBrowserRouter([
                         element: <ScanView/>
                     },
                     {
-                        path: 'search'
+                        path: 'search',
+                        element: <SearchView/>
                     },
                     {
-                        path: 'account'
+                        path: 'account',
+                        element: <AccountView/>
                     }
                 ]
             }
         ]
-    },
-    {
-        path: '/scan',
-        element: <ScanView/>
     }
 ])

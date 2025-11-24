@@ -4,10 +4,12 @@ import { toast } from "sonner";
 import Cookies from "js-cookie";
 import { login } from "./services/auth.service";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "@/context/UserContext";
 
 export default function LoginPage () {
 
     const navigate = useNavigate();
+    const { getAccount } = useUser();
     const [ email, setEmail ] = useState('');
     const [ pwd, setPwd ] = useState('');
     const [ viewPwd, setViewPwd ] = useState(false);
@@ -49,12 +51,10 @@ export default function LoginPage () {
                 const data = await login(email, pwd)
                 if (!data.ok) return toast.warning('Alerta', { description: data.message })
                     const expiresAt = new Date(Date.now() + 8 * 60 * 60 * 1000);
-                    Cookies.set('user_college', data.data, { expires: expiresAt })
-                    localStorage.setItem("token", data.data);
+                    Cookies.set("tuttis_user", data.data, { expires: expiresAt });
                     toast.success('Éxito', { description: data.message })
-                    setTimeout(() => {
-                        navigate('/dashboard')
-                    }, 3000)
+                    await getAccount(data.data)
+                    navigate('/dashboard')
             } catch (error) {
                 return toast.error('Error', { description: `${error.message}` })
             } finally {

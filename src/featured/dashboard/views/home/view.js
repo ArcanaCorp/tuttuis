@@ -9,6 +9,7 @@ import LastCitations from "./components/LastCitations";
 import LastReports from "./components/LastReports";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import { useState } from "react";
+import Header from "../../layout/header";
 moment.locale("es");
 
 export default function HomeView () {
@@ -22,10 +23,7 @@ export default function HomeView () {
 
         <>
         
-            <header className='__header_home_view'>
-                <p className='__txt_greeting'>Bienvenido,</p>
-                <h1>{user?.name}</h1>
-            </header>
+            <Header/>
 
             <main className='__main_home_view'>
 

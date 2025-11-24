@@ -1,5 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { tabs } from "@/config";
+import { Toaster } from "sonner";
 import './styles/layout.css'
 
 export default function DashboardLayout () {
@@ -26,6 +27,8 @@ export default function DashboardLayout () {
                     ))}
                 </ul>
             </footer>
+
+            <Toaster position="top-center" duration={3000} richColors />
 
         </>
 
