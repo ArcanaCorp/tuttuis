@@ -43,7 +43,7 @@ export const UserProvider = ({ children }) => {
             }
         }
         verifyAccount();
-    }, []);
+    }, [user]);
 
     const contextValue = {
         user,

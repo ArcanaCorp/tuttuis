@@ -1,22 +1,20 @@
+import { useState } from "react";
+import { IconChevronDown, IconChevronUp } from "@tabler/icons-react"
 import moment from "moment";
-import { useUser } from '@/context/UserContext'
+import Header from "../../layout/header";
 import Calendar from './components/Calendar';
-import './styles/homeview.css'
-
-import "moment/locale/es";
 import Activities from "./components/Activities";
 import LastCitations from "./components/LastCitations";
 import LastReports from "./components/LastReports";
-import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
-import { useState } from "react";
-import Header from "../../layout/header";
+import './styles/homeview.css'
+
+import "moment/locale/es";
 moment.locale("es");
 
 export default function HomeView () {
 
     const today = moment();
     const currentMonth = today.format("MMMM");
-    const { user } = useUser();
     const [ toogleCalendar, setToogleCalendar ] = useState(false);
 
     return (
