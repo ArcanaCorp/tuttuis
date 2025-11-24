@@ -1,0 +1,118 @@
+.__auth_header {
+    width: 100%;
+    display: flex;
+    gap: .4rem;
+    height: 150px;
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.__auth_header .__auth_logo {
+    width: 100%;
+    height: 80px;
+}
+
+.__auth_header .__auth_logo .__link_logo {
+    display: flex;
+    gap: 1rem;
+    height: inherit;
+    align-items: center;
+}
+
+.__auth_header .__auth_logo .__link_logo .__img_logo_college {
+    width: auto;
+    height: 60px;
+}
+
+.__auth_header .__auth_logo .__link_logo .__img_logo {
+    width: 25%;
+}
+
+.__auth_header p {
+    color: var(--color-gray);
+    font-size: var(--font-size-xs);
+}
+
+.__auth_main {
+    width: 100%;
+    padding: 2rem 1rem;
+    height: calc(100dvh - 230px);
+}
+
+.__auth_main .__form {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.__auth_main .__form .__form_group {
+    width: 100%;
+}
+
+.__auth_main .__form .__form_group .__form_label {
+    display: inline-block;
+    margin-bottom: .4rem;
+    color: var(--color-gray);
+    font-size: var(--font-size-xs);
+}
+
+.__auth_main .__form .__form_group .__form_control {
+    position: relative;
+    width: 100%;
+}
+
+.__auth_main .__form .__form_group .__form_control .__entry {
+    overflow: hidden;
+    padding: 0 1rem;
+    background-color: #f2f2f2;
+}
+
+.__auth_main .__form .__form_group .__form_control .__form_ico {
+    position: absolute;
+    display: grid;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+}
+
+.__auth_main .__form .__form_group .__form_error {
+    margin: .2rem 0;
+    color: var(--color-error);
+    font-size: var(--font-size-xs);
+}
+
+.__auth_main .__form .__form_group .__form_link {
+    margin: .2rem 0;
+    font-size: var(--font-size-xs);
+}
+
+.__auth_footer {
+    width: 100%;
+    height: 80px;
+    padding: 0 1rem;
+}
+
+.__auth_footer .__box_footer {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.__auth_footer .__box_footer p,
+.__auth_footer .__box_footer p a {
+    color: var(--color-gray);
+    font-size: var(--font-size-xxs);
+}
+
+.__auth_footer .__box_footer .__img_logo {
+    width: 18%;
+    height: auto;
+}

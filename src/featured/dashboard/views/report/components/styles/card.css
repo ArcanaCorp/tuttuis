@@ -1,0 +1,11 @@
+.__card_report {
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+}
+
+.__card_report .__txt_hora {
+    color: var(--color-gray);
+    font-size: var(--font-size-xs);
+}

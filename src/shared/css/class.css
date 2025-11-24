@@ -1,0 +1,35 @@
+:root {
+    --entry-height: 50px;
+    --btn-height: 50px;
+}
+
+.__entry_block {
+    width: 100%;
+    height: var(--entry-height);
+}
+
+.__entry_rounded_md {
+    border-radius: var(--radius-md);
+}
+
+.__entry:focus {
+    border: 2px solid var(--color-primary);
+}
+
+.__btn_block {
+    width: 100%;
+    height: var(--btn-height);
+}
+.__btn_rounded_md {
+    border-radius: var(--radius-md);
+}
+.__btn_primary {
+    color: var(--color-dark);
+    background-color: var(--color-primary);
+}
+
+.__btn:disabled {
+    color: #888888;
+    cursor: not-allowed;
+    background-color: var(--color-secondary);
+}

@@ -1,0 +1,11 @@
+.__cmp_lastctns {
+    width: 100%;
+}
+
+.__cmp_lastctns .__cmp_lastctns_empty {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--radius-md);
+    background-color: var(--color-secondary);
+}
