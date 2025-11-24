@@ -1,61 +1,31 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { QrScanner } from "react-qr-barcode-scanner";
 
 export default function Scan() {
 
-    const videoRef = useRef(null);
-    const [ data, setData ] = useState("No hay datos");
-    const [ loading, setLoading ] = useState(false);
-
-    useEffect(() => {
-
-        let stream;
-        const barcodeDetector = new BarcodeDetector({ formats: ["qr_code"] });
-
-        async function initCam() {
-            try {
-                stream = await navigator.mediaDevices.getUserMedia({
-                    video: { facingMode: "environment" }
-                });
-
-                if (videoRef.current) {
-                    videoRef.current.srcObject = stream;
-                    videoRef.current.play();
-                }
-
-                scanLoop();
-            } catch (err) {
-                console.error("Error cámara:", err);
-            }
-        }
-
-        async function scanLoop() {
-            if (!videoRef.current) return;
-
-            try {
-                const barcodes = await barcodeDetector.detect(videoRef.current);
-                if (barcodes.length > 0) {
-                    setData(barcodes[0].rawValue);
-                }
-            } catch (_) {}
-
-            requestAnimationFrame(scanLoop);
-        }
-
-        initCam();
-
-        return () => {
-            if (stream) {
-                stream.getTracks().forEach(t => t.stop());
-            }
-        };
-
-    }, []);
+    const [data, setData] = useState("No hay datos");
+    //const [loading, setLoading] = useState(false);
 
     return (
-        <>
-            <div className="__scan_wrap_native">
-                <video ref={videoRef} className="__video_native"></video>
-            </div>
-        </>
+        <div className="__scan_wrap_native">
+            <QrScanner
+                onUpdate={(result) => {
+                    if (result) {
+                        setData(result.text);
+                    }
+                }}
+                onError={(err) => {
+                    console.error("Error en el escáner:", err);
+                }}
+                videoStyle={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                }}
+            />
+
+            {/* Si quieres mostrar el valor leído, puedes dejar algo así */}
+            {<p>{data}</p>}
+        </div>
     );
 }
