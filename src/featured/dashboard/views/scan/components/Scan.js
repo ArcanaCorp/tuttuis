@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { QrScanner } from "react-qr-barcode-scanner";
+import BarcodeScanner from "react-qr-barcode-scanner";
 
 export default function Scan() {
 
@@ -8,19 +8,12 @@ export default function Scan() {
 
     return (
         <div className="__scan_wrap_native">
-            <QrScanner
-                onUpdate={(result) => {
-                    if (result) {
-                        setData(result.text);
-                    }
-                }}
-                onError={(err) => {
-                    console.error("Error en el escáner:", err);
-                }}
-                videoStyle={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover"
+            <BarcodeScanner 
+                width={500}
+                height={500}
+                onUpdate={(err, result) => {
+                if (result) setData(result.text);
+                else setData("Not Found");
                 }}
             />
 
