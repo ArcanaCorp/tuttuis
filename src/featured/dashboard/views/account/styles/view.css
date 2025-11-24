@@ -39,10 +39,10 @@
     display: flex;
     height: inherit;
     gap: 1rem;
+    background: none;
     align-items: center;
     border-radius: inherit;
     font-size: var(--font-size-xs);
-    background-color: var(--color-background);
 }
 
 .__main_account_view .__section_opt ul li .__btn_logout {

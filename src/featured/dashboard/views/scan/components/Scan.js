@@ -13,7 +13,7 @@ export default function Scan() {
         try {
             setLoading(true);
             const dia = moment().format('YYYY-MM-DD')
-            const hora = '07:00:00' //moment().format('HH:mm:ss')
+            const hora = moment().format('HH:mm:ss')
             const data = await serviceRegisterAssitence(token, dia, hora);
             if (!data.ok) return toast.warning('Alerta', { description: data.message })
                 toast.success('Éxito', { description: data.message })
