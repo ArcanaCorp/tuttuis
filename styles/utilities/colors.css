@@ -1,0 +1,236 @@
+:root {
+    /* Supernova palette */
+    --supernova-50:  #fefce8;
+    --supernova-100: #fff9c2;
+    --supernova-200: #fff088;
+    --supernova-300: #ffdf44;
+    --supernova-400: #fec907;
+    --supernova-500: #eeb204;
+    --supernova-600: #cd8801;
+    --supernova-700: #a46004;
+    --supernova-800: #874b0c;
+    --supernova-900: #733e10;
+    --supernova-950: #431f05;
+
+    /* Semantic colors */
+    --color-primary: var(--supernova-400);
+    --color-white: #FFFFFF;
+    --color-surface: #F1F5F9;
+    --color-dark: #181818;
+    --color-background: #f8f8f8;
+    --color-text: var(--supernova-950);
+    --color-muted: #888888;
+
+    --color-danger: #FF0000;
+    --color-danger-transparent: rgb(255, 0, 0, .2);
+
+}
+
+.bg-primary     { background-color: var(--color-primary); }
+.bg-background  { background-color: var(--color-background); }
+.bg-surface     { background-color: var(--color-surface); }
+.bg-dark        { background-color: var(--color-dark); }
+.bg-white       { background-color: var(--color-white); }
+.bg-transparent { background: transparent; }
+
+.bg-success-transparent { background-color: rgba(63, 225, 55, .25); }
+.bg-danger-transparent { background-color: var(--color-danger-transparent); }
+
+.bg-supernova-50  { background-color: var(--supernova-50); }
+.bg-supernova-100 { background-color: var(--supernova-100); }
+.bg-supernova-200 { background-color: var(--supernova-200); }
+.bg-supernova-300 { background-color: var(--supernova-300); }
+.bg-supernova-400 { background-color: var(--supernova-400); }
+.bg-supernova-500 { background-color: var(--supernova-500); }
+.bg-supernova-600 { background-color: var(--supernova-600); }
+.bg-supernova-700 { background-color: var(--supernova-700); }
+.bg-supernova-800 { background-color: var(--supernova-800); }
+.bg-supernova-900 { background-color: var(--supernova-900); }
+.bg-supernova-950 { background-color: var(--supernova-950); }
+
+.text-primary { color: var(--color-primary); }
+.text-default { color: var(--color-text); }
+.text-dark    { color: var(--color-dark); }
+.text-white   { color: var(--color-white); }
+.text-muted { color: var(--color-muted); }
+.text-success { color: rgb(6, 103, 1); }
+.text-danger { color: var(--color-danger); }
+
+.text-supernova-50  { color: var(--supernova-50); }
+.text-supernova-100 { color: var(--supernova-100); }
+.text-supernova-200 { color: var(--supernova-200); }
+.text-supernova-300 { color: var(--supernova-300); }
+.text-supernova-400 { color: var(--supernova-400); }
+.text-supernova-500 { color: var(--supernova-500); }
+.text-supernova-600 { color: var(--supernova-600); }
+.text-supernova-700 { color: var(--supernova-700); }
+.text-supernova-800 { color: var(--supernova-800); }
+.text-supernova-900 { color: var(--supernova-900); }
+.text-supernova-950 { color: var(--supernova-950); }
+
+.hover-bg-primary:hover { background-color: var(--color-primary); }
+.hover-text-primary:hover { color: var(--color-primary); }
+
+@media (min-width: 768px) {
+    .md\:bg-primary     { background-color: var(--color-primary); }
+    .md\:bg-background  { background-color: var(--color-background); }
+    .md\:bg-surface     { background-color: var(--color-surface); }
+    .md\:bg-dark        { background-color: var(--color-dark); }
+    .md\:bg-white       { background-color: var(--color-white); }
+    .md\:bg-transparent { background: transparent; }
+
+    .md\:bg-supernova-50  { background-color: var(--supernova-50); }
+    .md\:bg-supernova-100 { background-color: var(--supernova-100); }
+    .md\:bg-supernova-200 { background-color: var(--supernova-200); }
+    .md\:bg-supernova-300 { background-color: var(--supernova-300); }
+    .md\:bg-supernova-400 { background-color: var(--supernova-400); }
+    .md\:bg-supernova-500 { background-color: var(--supernova-500); }
+    .md\:bg-supernova-600 { background-color: var(--supernova-600); }
+    .md\:bg-supernova-700 { background-color: var(--supernova-700); }
+    .md\:bg-supernova-800 { background-color: var(--supernova-800); }
+    .md\:bg-supernova-900 { background-color: var(--supernova-900); }
+    .md\:bg-supernova-950 { background-color: var(--supernova-950); }
+
+    .md\:text-primary { color: var(--color-primary); }
+    .md\:text-default { color: var(--color-text); }
+    .md\:text-dark    { color: var(--color-dark); }
+    .md\:text-white   { color: var(--color-white); }
+
+    .md\:text-supernova-50  { color: var(--supernova-50); }
+    .md\:text-supernova-100 { color: var(--supernova-100); }
+    .md\:text-supernova-200 { color: var(--supernova-200); }
+    .md\:text-supernova-300 { color: var(--supernova-300); }
+    .md\:text-supernova-400 { color: var(--supernova-400); }
+    .md\:text-supernova-500 { color: var(--supernova-500); }
+    .md\:text-supernova-600 { color: var(--supernova-600); }
+    .md\:text-supernova-700 { color: var(--supernova-700); }
+    .md\:text-supernova-800 { color: var(--supernova-800); }
+    .md\:text-supernova-900 { color: var(--supernova-900); }
+    .md\:text-supernova-950 { color: var(--supernova-950); }
+
+    .md\:hover-bg-primary:hover { background-color: var(--color-primary); }
+    .md\:hover-text-primary:hover { color: var(--color-primary); }
+}
+
+@media (min-width: 1024px) {
+    .lg\:bg-primary     { background-color: var(--color-primary); }
+    .lg\:bg-background  { background-color: var(--color-background); }
+    .lg\:bg-surface     { background-color: var(--color-surface); }
+    .lg\:bg-dark        { background-color: var(--color-dark); }
+    .lg\:bg-white       { background-color: var(--color-white); }
+    .lg\:bg-transparent { background: transparent; }
+
+    .lg\:bg-supernova-50  { background-color: var(--supernova-50); }
+    .lg\:bg-supernova-100 { background-color: var(--supernova-100); }
+    .lg\:bg-supernova-200 { background-color: var(--supernova-200); }
+    .lg\:bg-supernova-300 { background-color: var(--supernova-300); }
+    .lg\:bg-supernova-400 { background-color: var(--supernova-400); }
+    .lg\:bg-supernova-500 { background-color: var(--supernova-500); }
+    .lg\:bg-supernova-600 { background-color: var(--supernova-600); }
+    .lg\:bg-supernova-700 { background-color: var(--supernova-700); }
+    .lg\:bg-supernova-800 { background-color: var(--supernova-800); }
+    .lg\:bg-supernova-900 { background-color: var(--supernova-900); }
+    .lg\:bg-supernova-950 { background-color: var(--supernova-950); }
+
+    .lg\:text-primary { color: var(--color-primary); }
+    .lg\:text-default { color: var(--color-text); }
+    .lg\:text-dark    { color: var(--color-dark); }
+    .lg\:text-white   { color: var(--color-white); }
+
+    .lg\:text-supernova-50  { color: var(--supernova-50); }
+    .lg\:text-supernova-100 { color: var(--supernova-100); }
+    .lg\:text-supernova-200 { color: var(--supernova-200); }
+    .lg\:text-supernova-300 { color: var(--supernova-300); }
+    .lg\:text-supernova-400 { color: var(--supernova-400); }
+    .lg\:text-supernova-500 { color: var(--supernova-500); }
+    .lg\:text-supernova-600 { color: var(--supernova-600); }
+    .lg\:text-supernova-700 { color: var(--supernova-700); }
+    .lg\:text-supernova-800 { color: var(--supernova-800); }
+    .lg\:text-supernova-900 { color: var(--supernova-900); }
+    .lg\:text-supernova-950 { color: var(--supernova-950); }
+
+    .lg\:hover-bg-primary:hover { background-color: var(--color-primary); }
+    .lg\:hover-text-primary:hover { color: var(--color-primary); }
+}
+
+@media (min-width: 1440px) {
+    .xl\:bg-primary     { background-color: var(--color-primary); }
+    .xl\:bg-background  { background-color: var(--color-background); }
+    .xl\:bg-surface     { background-color: var(--color-surface); }
+    .xl\:bg-dark        { background-color: var(--color-dark); }
+    .xl\:bg-white       { background-color: var(--color-white); }
+    .xl\:bg-transparent { background: transparent; }
+
+    .xl\:bg-supernova-50  { background-color: var(--supernova-50); }
+    .xl\:bg-supernova-100 { background-color: var(--supernova-100); }
+    .xl\:bg-supernova-200 { background-color: var(--supernova-200); }
+    .xl\:bg-supernova-300 { background-color: var(--supernova-300); }
+    .xl\:bg-supernova-400 { background-color: var(--supernova-400); }
+    .xl\:bg-supernova-500 { background-color: var(--supernova-500); }
+    .xl\:bg-supernova-600 { background-color: var(--supernova-600); }
+    .xl\:bg-supernova-700 { background-color: var(--supernova-700); }
+    .xl\:bg-supernova-800 { background-color: var(--supernova-800); }
+    .xl\:bg-supernova-900 { background-color: var(--supernova-900); }
+    .xl\:bg-supernova-950 { background-color: var(--supernova-950); }
+
+    .xl\:text-primary { color: var(--color-primary); }
+    .xl\:text-default { color: var(--color-text); }
+    .xl\:text-dark    { color: var(--color-dark); }
+    .xl\:text-white   { color: var(--color-white); }
+
+    .xl\:text-supernova-50  { color: var(--supernova-50); }
+    .xl\:text-supernova-100 { color: var(--supernova-100); }
+    .xl\:text-supernova-200 { color: var(--supernova-200); }
+    .xl\:text-supernova-300 { color: var(--supernova-300); }
+    .xl\:text-supernova-400 { color: var(--supernova-400); }
+    .xl\:text-supernova-500 { color: var(--supernova-500); }
+    .xl\:text-supernova-600 { color: var(--supernova-600); }
+    .xl\:text-supernova-700 { color: var(--supernova-700); }
+    .xl\:text-supernova-800 { color: var(--supernova-800); }
+    .xl\:text-supernova-900 { color: var(--supernova-900); }
+    .xl\:text-supernova-950 { color: var(--supernova-950); }
+
+    .xl\:hover-bg-primary:hover { background-color: var(--color-primary); }
+    .xl\:hover-text-primary:hover { color: var(--color-primary); }
+}
+
+@media (min-width: 2560px) {
+    .xxl\:bg-primary     { background-color: var(--color-primary); }
+    .xxl\:bg-background  { background-color: var(--color-background); }
+    .xxl\:bg-surface     { background-color: var(--color-surface); }
+    .xxl\:bg-dark        { background-color: var(--color-dark); }
+    .xxl\:bg-white       { background-color: var(--color-white); }
+    .xxl\:bg-transparent { background: transparent; }
+
+    .xxl\:bg-supernova-50  { background-color: var(--supernova-50); }
+    .xxl\:bg-supernova-100 { background-color: var(--supernova-100); }
+    .xxl\:bg-supernova-200 { background-color: var(--supernova-200); }
+    .xxl\:bg-supernova-300 { background-color: var(--supernova-300); }
+    .xxl\:bg-supernova-400 { background-color: var(--supernova-400); }
+    .xxl\:bg-supernova-500 { background-color: var(--supernova-500); }
+    .xxl\:bg-supernova-600 { background-color: var(--supernova-600); }
+    .xxl\:bg-supernova-700 { background-color: var(--supernova-700); }
+    .xxl\:bg-supernova-800 { background-color: var(--supernova-800); }
+    .xxl\:bg-supernova-900 { background-color: var(--supernova-900); }
+    .xxl\:bg-supernova-950 { background-color: var(--supernova-950); }
+
+    .xxl\:text-primary { color: var(--color-primary); }
+    .xxl\:text-default { color: var(--color-text); }
+    .xxl\:text-dark    { color: var(--color-dark); }
+    .xxl\:text-white   { color: var(--color-white); }
+
+    .xxl\:text-supernova-50  { color: var(--supernova-50); }
+    .xxl\:text-supernova-100 { color: var(--supernova-100); }
+    .xxl\:text-supernova-200 { color: var(--supernova-200); }
+    .xxl\:text-supernova-300 { color: var(--supernova-300); }
+    .xxl\:text-supernova-400 { color: var(--supernova-400); }
+    .xxl\:text-supernova-500 { color: var(--supernova-500); }
+    .xxl\:text-supernova-600 { color: var(--supernova-600); }
+    .xxl\:text-supernova-700 { color: var(--supernova-700); }
+    .xxl\:text-supernova-800 { color: var(--supernova-800); }
+    .xxl\:text-supernova-900 { color: var(--supernova-900); }
+    .xxl\:text-supernova-950 { color: var(--supernova-950); }
+
+    .xxl\:hover-bg-primary:hover { background-color: var(--color-primary); }
+    .xxl\:hover-text-primary:hover { color: var(--color-primary); }
+}

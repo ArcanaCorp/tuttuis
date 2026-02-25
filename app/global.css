@@ -1,0 +1,84 @@
+:root {
+
+    /* Font Family */
+    --font-family-base: var(--font-poppins-sans), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family-heading: var(--font-poppins-sans), system-ui, sans-serif;
+    --font-family-mono: 'JetBrains Mono', monospace;
+
+    /* Font sizes */
+    --font-size-xs: 10px;
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 20px;
+    --font-size-3xl: 24px;
+    --font-size-4xl: 28px;
+
+    /* Line heights */
+    --line-height-tight: 1.2;
+    --line-height-snug: 1.35;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.65;
+
+    /* Font weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.12);
+
+    /* zIndex */
+    --z-dropdown: 1000;
+    --z-sticky: 1100;
+    --z-modal: 1200;
+    --z-toast: 1300;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 400ms ease;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: var(--font-family-base);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-base);
+    background-color: var(--color-background);
+}
+
+input, select, textarea {
+    outline: none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.tabler-icon { stroke-width: 1.2; }

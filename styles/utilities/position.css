@@ -1,0 +1,12 @@
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.static { position: static; }
+.sticky { position: sticky; }
+
+.inset { inset: 0; }
+
+.top { top: var(--top); }
+.left { left: var(--left); }
+.right { right: var(--right); }
+.bottom { bottom: var(--bottom); }
