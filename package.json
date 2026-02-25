@@ -4,6 +4,8 @@
   "description": "ttutis – Sistema de Control Escolar en Tiempo Real",
   "keywords": ["school", "escuelas", "assistence", "asistencia", "tiempo real", "qr"],
   "private": true,
+  "homepage": "/",
+  "author": "ARCANA CORP SAC <arcanacorp12@gmail.com> (https://arcanacorp.netlify.app)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
