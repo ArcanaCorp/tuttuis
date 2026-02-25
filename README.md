@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 ttutis – Sistema de Control Escolar en Tiempo Real
 
-## Getting Started
+> **Tecnología educativa. Control real. Comunicación inmediata.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Descripción General
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**ttutis** es una plataforma privada de **control escolar en tiempo real**, diseñada para instituciones educativas que buscan **digitalizar y automatizar** la asistencia, la gestión de estudiantes y la comunicación con padres mediante tecnologías modernas y notificaciones instantáneas.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+El sistema reemplaza procesos manuales y físicos por una solución digital **simple, rápida y escalable**, optimizada para una implementación ágil y una experiencia clara tanto en **web como en dispositivos móviles**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Funcionalidades Principales
 
-To learn more about Next.js, take a look at the following resources:
+* 📲 **Control de asistencia en tiempo real** mediante códigos QR
+* 👩‍🎓 **Registro y gestión de estudiantes**
+* 💬 **Notificaciones automáticas vía WhatsApp** a padres o tutores
+* 📊 **Historial completo de asistencia y eventos**
+* 🏫 **Panel administrativo institucional**
+* 👥 **Gestión de roles** (Administrador, Auxiliar)
+* ☁️ **Arquitectura escalable** preparada para crecimiento institucional
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Arquitectura y Enfoque
 
-## Deploy on Vercel
+ttutis ha sido desarrollado bajo principios de:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* ⚡ Alto rendimiento y respuesta en tiempo real
+* 🔐 Seguridad y confidencialidad de datos
+* 📈 Escalabilidad estructural
+* 🧩 Modularidad para futuras integraciones
+* 📱 Experiencia optimizada en múltiples dispositivos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🔒 Acceso y Uso
+
+⚠️ **Este proyecto es privado y de uso exclusivo.**
+
+El acceso al código fuente, documentación técnica, despliegue o reutilización del sistema está **estrictamente prohibido** sin autorización expresa y por escrito de la empresa propietaria.
+
+Cualquier uso no autorizado, copia, modificación, distribución o ingeniería inversa está sujeto a **acciones legales**.
+
+---
+
+## 📜 Licencia
+
+### LICENCIA PROPIETARIA – TODOS LOS DERECHOS RESERVADOS
+
+Este software es propiedad intelectual protegida.
+
+* ❌ No es software libre
+* ❌ No es de código abierto
+* ❌ No se concede derecho de uso, copia, modificación o redistribución
+* ✅ Solo disponible bajo contrato o autorización formal
+
+---
+
+## 🧠 Propiedad Intelectual
+
+Todo el código fuente, diseño, arquitectura, flujos, marca, nombre comercial y documentación asociada a **ttutis** son propiedad exclusiva de:
+
+**ARCANA CORP**
+RUC: 20612123901
+Perú 🇵🇪
+
+---
+
+## 🤝 Confidencialidad
+
+La información contenida en este repositorio es **confidencial**.
+
+El acceso está limitado únicamente a:
+
+* Personal autorizado
+* Socios estratégicos
+* Clientes bajo acuerdo formal
+
+---
+
+## 📬 Contacto Corporativo
+
+Para consultas comerciales, licencias, alianzas o soporte institucional:
+
+**ARCANA CORP**
+Área de Desarrollo y Producto
+📧 [contacto@arcanacorp.pe](mailto:contacto@arcanacorp.pe)
+
+---
+
+# ttutis
+
+### Educación inteligente. Gestión eficiente. Comunicación inmediata. 🚀

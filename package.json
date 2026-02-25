@@ -1,6 +1,8 @@
 {
   "name": "ttutis",
   "version": "0.1.0",
+  "description": "ttutis – Sistema de Control Escolar en Tiempo Real",
+  "keywords": ["school", "escuelas", "assistence", "asistencia", "tiempo real", "qr"],
   "private": true,
   "scripts": {
     "dev": "next dev",
