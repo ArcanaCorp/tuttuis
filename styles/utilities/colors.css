@@ -32,9 +32,11 @@
 .bg-dark        { background-color: var(--color-dark); }
 .bg-white       { background-color: var(--color-white); }
 .bg-transparent { background: transparent; }
+.bg-muted { background-color: var(--color-muted); }
 
 .bg-success-transparent { background-color: rgba(63, 225, 55, .25); }
 .bg-danger-transparent { background-color: var(--color-danger-transparent); }
+.bg-yellow-transparent { background-color: rgb(254, 201, 7, .2); }
 
 .bg-supernova-50  { background-color: var(--supernova-50); }
 .bg-supernova-100 { background-color: var(--supernova-100); }
@@ -53,7 +55,7 @@
 .text-dark    { color: var(--color-dark); }
 .text-white   { color: var(--color-white); }
 .text-muted { color: var(--color-muted); }
-.text-success { color: rgb(6, 103, 1); }
+.text-success { color: #066701; }
 .text-danger { color: var(--color-danger); }
 
 .text-supernova-50  { color: var(--supernova-50); }

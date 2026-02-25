@@ -53,6 +53,9 @@
 .line-height-normal { line-height: var(--line-height-normal); }
 .line-height-relaxed { line-height: var(--line-height-relaxed); }
 
+.text-wrap { text-wrap: wrap; }
+.text-nowrap { text-wrap: nowrap; }
+
 @media (min-width: 768px) {
     .md\:text-xs { font-size: var(--font-size-xs); }
     .md\:text-sm { font-size: var(--font-size-sm); }

@@ -3,7 +3,6 @@ import '@/styles/theme.css'
 import './global.css'
 import { Toaster } from "sonner"
 import { AuthProvider } from "@/context/AuthContext"
-import AuthGuard from "@/guards/auth.guard"
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -80,9 +79,7 @@ export default function RootLayout ({ children }) {
             <html lang="en" className={`${poppins.variable}`}>
                 <body>
                     <AuthProvider>
-                        <AuthGuard>
-                            {children}
-                        </AuthGuard>
+                        {children}
                     </AuthProvider>
                 </body>
             </html>
