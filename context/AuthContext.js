@@ -73,13 +73,9 @@ export function AuthProvider({ children }) {
         session,
         user,
         school: user?.school || null,
-
         loading,
-
-        // ✅ auth real
         isAuthenticated: !!session && !!user,
         hasSchool: !!user?.school_id,
-
         logout: async () => {
             localStorage.removeItem(CACHE_KEY);
             await signOut();

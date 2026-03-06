@@ -8,8 +8,6 @@ export default function Header () {
 
     const { user } = useAuth();
 
-    console.log(user);
-
     return (
 
         <header className="w-full bg-white border-bottom">

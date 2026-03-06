@@ -139,7 +139,8 @@ export default function LandingPage() {
                             <h3 className="text-white mb4 text-lg">Empresa</h3>
                             <ul className="flex flex-col gap-4">
                                 <Link href={'/'} className="text-md text-muted" aria-label="Ir a Características">Acerca de</Link>
-                                <Link href={'/'} className="text-md text-muted" aria-label="Ir a WhatsApp API">Política de Privacidad</Link>
+                                <Link href={'/legal/policy'} className="text-md text-muted" aria-label="Ir a WhatsApp API">Política de Privacidad</Link>
+                                <Link href={'/legal/terms'} className="text-md text-muted" aria-label="Ir a WhatsApp API">Términos y Condiciones</Link>
                                 <Link href={'/'} className="text-md text-muted" aria-label="Ir a Precios">Contacto</Link>
                             </ul>
                         </div>

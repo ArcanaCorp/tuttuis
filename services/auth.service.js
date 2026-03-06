@@ -76,13 +76,12 @@ export async function fetchUserWithSchool(userId) {
             id,
             full_name,
             email,
+            phone,
             role,
             school_id,
             schools (
-                id,
-                name,
-                code,
-                logo_url
+                *,
+                school_settings (*)
             )
         `)
         .eq("id", userId)
